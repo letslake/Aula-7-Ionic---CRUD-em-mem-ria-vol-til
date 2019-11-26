@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Carros
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+ <ion-card *ngFor="let car of cars" (click)="onItemClick(car)">
+   <ion-card-header>
+      {{car.ano}}
+   </ion-card-header>
+   <ion-card-content>
+     <ion-card-title>
+        {{car.marca}}
+     </ion-card-title>
+     <p>
+        {{car.modelo}}
+     </p>
+   </ion-card-content>
+ </ion-card>
+ 
+</ion-content>
+
+
